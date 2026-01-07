@@ -1,0 +1,13 @@
+{
+  "name": "vchat",
+  "version": "1.0.0",
+  "description": "Simple P2P video chat using WebRTC",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "dependencies": {
+    "express": "^4.18.2",
+    "socket.io": "^4.7.2"
+  }
+}

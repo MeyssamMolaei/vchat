@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>vChat - P2P Video Chat</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>vChat</h1>
+        
+        <button id="joinBtn">Start Video Chat</button>
+        
+        <div class="video-container">
+            <div class="video-panel">
+                <video id="localVideo" autoplay muted></video>
+                <label>You</label>
+            </div>
+            <div class="video-panel">
+                <video id="remoteVideo" autoplay></video>
+                <label>Remote</label>
+            </div>
+        </div>
+        
+        <div class="status" id="status">Click Start Video Chat to begin</div>
+    </div>
+
+    <script src="/socket.io/socket.io.js"></script>
+    <script src="app.js"></script>
+</body>
+</html>
